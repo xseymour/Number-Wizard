@@ -24,10 +24,10 @@ public class NumberWizard : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.UpArrow)) {
 			print("Up arrow Pressed");
-		}
-
-		if (Input.GetKeyDown(KeyCode.DownArrow)) {
+		} else if (Input.GetKeyDown(KeyCode.DownArrow)) {
 			print("Down arrow Pressed");
+		} else if (Input.GetKeyDown(KeyCode.Return)) {
+			print("I won!");
 		}
 	}
 }
